@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>링크 | HTML</title>
+    <style>
+        p{margin-top: 30px;}
+        a{width: 100px; height: 20px; background-color: #000; padding: 10px; border-radius: 1px solid #ff0000; text-decoration: none; text-align: center; color: #fff; border-radius: 20px;}
+        .google:hover{background-color: #ff0000;}
+        .yuna_T:hover{background-color: blue;}
+    </style>
+</head>
+<body>
+    <h1>HTML(HyperText Markup Language)</h1>
+    <h2>절대경로</h2>
+    <p><a href="https://google.com">구글 바로가기</a></p>
+    <p><a href="http://naver.com">네이버 바로가기</a></p>
+    <p><em><a href="https://webty.tistory.com/148">블로그 가기 (인라인만)</a></em></p> <!-- 인라인만 되는 a태그 -->
+    <p><a href="https://webty.tistory.com/148"><em>블로그 가기 (블록/인라인)</em></a></p> <!-- 블록/인라인 되는 a태그 -->
+    <hr>
+    <!-- 절대경로로 링크 주소(구글 바로가기) 만들기 -->
+    <p><a href="https://google.com"><em>구글</em>바로가기</a></p>
+    <h2>절대경로의 target(위치설정)</h2>
+    <p>
+        <a href="https://google.com"  target="_blank" class="google">구글 새창으로 열기</a><br> <!-- 여기서 br 태그 써도 되는 이유: a를 인라인으로 쓰겠다고 확정 짓는 태그임. (좋은 방법은 아님) -->
+        <br>
+        <br>
+        <a href="https://webty.tistory.com/category" target="_blank" class="yuna_T">유나쌤 블로그 새창</a>
+    </p>
+    <hr>
+    <h2>상대경로</h2> <!-- 같은 위치에 있는 파일 (=html과 css 파일)이면, 연결할 수 있음. ../폴더명/파일명.확장자 -->
+    <a href="#"></a>
+</body>
+</html>
