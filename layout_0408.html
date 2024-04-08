@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 0408</title>
+</head>
+<body>
+    <div><!-- 상품 영역 그룹 시작 -->
+        <a href="#"> <!-- 상품 1 -->
+            <p>1위</p>
+            <p><img src="#" alt=""></p>
+            <p>무신사 스탠다드</p>
+            <h2>세미 와이드 하든 밴딩 슬랙스</h2>
+            <p><span>39,900원</span></p>
+        </a>
+        <a href="#"> <!-- 상품 2 -->
+            <p>2위</p>
+            <p><img src="#" alt=""></p>
+            <p>토피</p>
+            <h2>[3,000원 결제혜택]모어</h2>
+            <p><del>49,000원</del><span>29,000원</span></p>
+        </a>
+    </div>
+    <hr>
+    <!-- div, span 연습해보기 -->
+    <div id="style_wrap"> <!-- 2개의 div를 묶은 스타일 큰 그룹 -->  
+        <div class="style_container"> <!-- 2개의 a는 1개의 div 안에 묶기 -->
+            <a href="#"><img src="#" alt="이민혁 모델 정보보기"></a>
+            <a href="#"> <!-- 상품링크 -->
+                <p><img src="#" alt=""></p>
+                <p>라플라이퍼키</p>
+                <h2>HT8705 웨어에버</h2>
+                <div class="price_group"><!-- p, div 태그 가능/ 가격은 em, span 가능-->
+                    <del>58,000원</del>
+                    <span>26,100원</span>
+                </div>
+            </a>
+        </div>
+        <div class="style_container">
+            <a href="#"><img src="#" alt="원피스를 입고 있는 모델 사진"></a>
+            <a href="#">
+                <p><img src="#" alt=""></p>
+                <h2>유쓰배쓰</h2>
+                <p>CHIFFON CARDIGAN_BLACK</p>
+                <p><del>139,000원</del><span>125,100원</span></p>
+            </a>
+        </div>
+    </div>
+    <hr> <!-- 연습하기 - 무신사 레이아웃-->
+    <div id="product_wrap"><!-- 이벤트상품영역 시작 -->
+        <div>
+            <h2>쇼케이스</h2>
+            <a href="#">전체</a>
+        </div>
+        <div class="product_g"> <!-- 이벤트 상품 1 그룹 -->
+            <a href="#"><img src="#" alt=""></a>
+            <p>EVENT</p>
+            <a href="#">
+                <p>백투베이직스</p>
+                <p><span>백투베이직스 24SPRING</span></p>
+                <p>안정적이고 부담없는 스타일을 선보이는 백투베이직스의 신상품을 만나보세요.</p>
+            </a>
+            <p><span class="event_txt">신상품 키링 3명 증정</span></p>
+        </div>
+        <div class="product_g"> <!-- 이벤트 상품 2 그룹 -->
+            <a href="#"><img src="#" alt=""></a>
+            <p>EVENT</p>
+            <a href="#">
+                <p>듀베티카</p>
+                <p><span>듀베티카 24SS 컬렉션 발매</span></p>
+                <p>듀베티카 신상품을 기간한정 15% 쿠폰과 함께 만나보세요!</p>
+            </a>
+            <p><span class="event_txt">쇼케이스 한정 구매 사은품 이벤트</span></p>
+        </div>
+    </div><!-- 이벤트상품영역 끝 -->
+    <hr>
+    <!-- 무신사 연습 : 쌤 코드 예시 -->
+    <div id="show_case_wrap">
+        <div class="title_area">
+            <h1>쇼케이스</h1>
+            <a href="#" class="all_view">전체</a>
+        </div>
+        <div class="contents_area"></div>
+        <a href="#" class="item">
+            <p class="product_img"><img src="#" alt=""></p>
+            <p class="event">
+                <span>EVENT</span>
+                <em>진행중 24.04.08 ~ 24.04.16</em>
+            </p>
+            <p class="brand_name">백투베이직스</p>
+            <h2>백투베이직스 24SPRING</h2> <!-- h태그는 반복이 적기 때문에 class를 잘 적지 않음 -->
+            <p class="contents">안정적이고 부담없는 스타일을 선보이는 백투베이직스의 신상품을 만나보세요.</p>
+            <p class="event_btm"><em>신상 키링 3명 증정</em></p>
+        </a>
+    </div>
+    <hr>
+    <!-- 메가박스 레이아웃 연습 -->
+    <div id="main_wrap"> <!-- 큰 그룹 -->
+        <div class="main_top"> <!-- 상단 제목,메뉴바 영역 -->
+            <a href="#">박스오피스</a>
+            <a href="#" class="movie_all">더 많은 영화보기 + </a>
+        </div>
+        <div><!-- 작은 그룹 - 영화 순위 -->
+            <div class="movie_g">
+                <p class="movie_chart"></p>
+                <a href="#"><img src="#" alt="쿵푸팬더4 영화 포스터"></a>
+                <a href="#" class="movie_like">1.1k</a>
+                <a href="#" class="btn"><em>예매</em></a>
+            </div>
+            <div class="movie_g">
+                <a href="#"><img src="#" alt="쿵푸팬더4 영화 포스터"></a>
+                <a href="#" class="movie_like">1.1k</a>
+                <a href="#" class="btn"><em>예매</em></a>
+            </div>
+        </div>
+    </div>
+    <!-- 메가박스 레이아웃 연습 : 쌤 코드 예시 -->
+    <div id="box_office_wrap">
+        <div class="title_wrap"> <!-- bar, top, wrap  -->
+            <h2>박스오피스</h2>
+            <a href="#">더 많은 영화 보기<img src="#" alt=""></a>
+        </div>
+        <div class="contents">
+            <div class="movie">
+                <a href="#">
+                    <span class="num">1</span>
+                    <span class="dolby">
+                        <img src="#" alt="dolby cinema">
+                        <img src="#" alt="dolby atomos">
+                    </span>
+                    <img src="#" alt="쿵푸팬더4">
+                </a>
+                <div class="like_ticket">
+                    <a href="#" class="like_btn"><img src="#" alt=""><span>1.1k</span></a>
+                    <a href="#" class="ticketing_btn">예매</a>
+                </div>
+            </div> <!-- movie 1순위 div 끝 -->
+            <div class="movie">
+                <a href="#">
+                    <span class="num">2</span>
+                    <img src="#" alt="골드핑거">
+                </a>
+                <div class="like_ticket">
+                    <a href="#" class="like_btn"><img src="#" alt=""><span>1.1k</span></a>
+                    <a href="#" class="ticketing_btn">예매</a>
+                </div>
+            </div> <!-- movie 2순위 div 끝 -->
+        </div>
+    </div>
+</body>
+</html>
