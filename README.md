@@ -93,3 +93,26 @@
 * `대체텍스트  alt`는 정보를 전달하기 위한 내용을 작성한다.
 * `대체텍스트  alt`는 이미지가 가진 의미 유무에 따라 이해하기 쉽게 작성한다.(ex : 텍스트 없는 이미지=의미x / 버튼=의미o)
 * `<a href="#"><img src="상대경로"></a>` : img를 클릭했을때 지정한 경로(지정 페이지)로 이동한다.
+## 이미지 태그 `img` (inline)
+* 인라인 태그(em,strong, figcaption 등)과 형제 태그로 작성될 수 있다.
+## figure, figcaption 태그
+* `figure`는 블록, `figcaption`은 인라인 태그다.
+* figure = 문서 안 사진 감싸는 틀 / figcaption = 사진 캡션
+## video 태그 (block)
+* 가능하면 모든 브라우저에 호환이 되는 .mp4 확장자를 쓰는 게 좋다.
+* 1) 영상의 주소를 가져오는 방법(소스코드)은 주소 뒤에 `?autoplay=1&mute=1&loop=1` 등의 값을 입력해준다.
+* 2) 내가 가진 영상(다운로드된 영상)은 열린 태그에 `<video src="비디오.mp4" autoplay muted loop controls>` 값을 작성한다.
+## class, id 많이 사용하는 키워드
+* wrapper, wrap, area 전체 묶는 영역
+* contents, container 중~소 묶는 영역
+* group, g 간단한 소그룹 영역
+* top, btm, left, right 레이아웃 방향을 의미하는 키워드
+* 예 : 의미있는단어_영역명
+* 예시 : product_wrap, item_area, price_g, main_contents, top_btn
+## div
+* 인라인과 블록이 2개 이상 형제일 경우 묶어주는 그룹태그
+* 레이아웃 기준 1행에 2열 이상 배치일 경우
+* 특정 의미를 가진 행에 같은 디자인 요소가 배치된 경우
+## span
+* 인라인이 2개 이상 형제일 경우 묶는 그룹태그
+* 의미없는 디자인 요소 인라인 처리 필요 시 사용
