@@ -117,3 +117,14 @@
 * 인라인이 2개 이상 형제일 경우 묶는 그룹태그
 * 의미없는 디자인 요소 인라인 처리 필요 시 사용
 * span(인라인) 안에 img(인라인) 사용 가능
+## semantic tag란?
+* 레이아웃 태그
+* header, section, footer 등이 있음
+### header
+* 사이트의 상단에서 '메뉴bar(gnb)'를 품고 있는 커다란 영역
+### nav
+* 내비게이션 태그
+### gnb, lnb, snb
+* gnb (global navigation bar) : nav 묶이는 대상 (사이트 제일 큰, 주요 메뉴)
+* lnb (local navigation bar)
+* snb (side navigation bar)

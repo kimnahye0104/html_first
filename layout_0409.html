@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 태그 시멘틱 태그</title>
+</head>
+<body>
+    <!--
+        시멘틱 태그 semantic tag
+        의미적인 단어를 태그로 구현했다.
+        자주 쓰는 태그를 의미적으로 분해?해놓은 것
+        header, section, footer 등등
+    -->
+
+    <!-- header : 로고와 내비게이션(메뉴) 들어가는 '레이아웃 태그' -->
+    <header>
+        <div id="header_top"> <!-- id로 작성해도 되지만, 1번 밖에 못 쓰니 주의하면서 이름 작성 (class="header_top" 도 괜찮음) -->
+            <div class="vip_member">
+                <a href="#">vip lounge</a>
+                <a href="#">멤버십</a>
+                <a href="#">고객센터</a>
+            </div>
+            <div class="login">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">빠른예매</a>
+            </div>
+        </div><!-- header_top 끝 -->
+        <div id="header_btm">
+            <div class="memu">
+                <a href="#"><img src="#" alt="메뉴"></a>
+                <a href="#"><img src="#" alt="검색하기"></a>
+            </div>
+            <div class="movie">
+                <a href="#">영화</a>
+                <a href="#">예매</a>
+                <a href="#">극장</a>
+            </div>
+            <h1><a href="#"><img src="#" alt="megabox_logo"></a></h1>
+            <div class="event">
+                <a href="#">이벤트</a>
+                <a href="#">스토어</a>
+                <a href="#">혜택</a>
+            </div>
+            <div class="my">
+                <a href="#"><img src="#" alt="캘린더"></a>
+                <a href="#"><img src="#" alt="마이페이지"></a>
+            </div>
+        </div><!-- header_btm 끝 -->
+    </header><!-- header 끝 -->
+
+    <!-- 메가박스 헤더 코드 : 쌤 예시 -->
+    <header>
+        <div class="top">
+            <div class="left_memu">
+                <a href="#">vip lounge</a>
+                <a href="#">멤버쉽</a>
+                <a href="#">고객센터</a>
+            </div>
+            <div class="right_memu">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">빠른예매</a>
+            </div>
+        </div>
+        <div class="btm">
+            <div class="all_memu_search"> <!-- snb_left -->
+                <a href="#"><img src="#" alt="전체메뉴"></a>
+                <a href="#"><img src="#" alt="검색"></a>
+            </div>
+            <nav class="gnb_left"> <!-- div class="left_memu" -->
+                <a href="#">영화</a>
+                <a href="#">예매</a>
+                <a href="#">극장</a>
+            </nav>
+            <h1><a href="#"><img src="#" alt="메가박스 로고"></a></h1>
+            <nav class="gnb_right"> <!-- div class="right_memu" -->
+                <a href="#">이벤트</a>
+                <a href="#">스토어</a>
+                <a href="#">혜택</a>
+            </nav>
+            <div class="ticket_my"> <!-- snb_right -->
+                <a href="#"><img src="#" alt="빠른예매"></a>
+                <a href="#"><img src="#" alt="마이페이지"></a>
+            </div>
+        </div>
+    </header>
+    <!-- 삼립 사이트 헤더 구조 연습 : 내 코드 -->
+    <header>
+        <h1><a href="#"><img src="#" alt="삼립로고"></a></h1>
+        <div class="memu_main">
+            <a href="#">company</a>
+            <a href="#">brands</a>
+            <a href="#">ir</a>
+            <a href="#">sns</a>
+            <a href="#">recruit</a>
+            <a href="#">store</a>
+        </div>
+        <div class="memu_right"> <!-- right나 sub 서브로 작성할까... -->
+            <a href="#">customer</a>
+            <img src="#" alt="구분선">
+            <span> <!-- a를 묶어주고, 형제인 img태그와 동일하게 인라인 span태그를 쓴다 -->
+                <a href="#"><img src="#" alt="언어설정"></a>
+                <a href="#"><img src="#" alt="검색"></a>
+            </span>
+        </div>
+    </header>
+    <!-- 삼립 헤더 코드 : 쌤 예시 -->
+    <header>
+        <h1><a href="#"><img src="#" alt="spc삼립"></a></h1>
+        <nav>
+            <a href="#">company</a>
+            <a href="#">brands</a>
+            <a href="#">ir</a>
+            <a href="#">sns</a>
+            <a href="#">recruit</a>
+            <a href="#">store</a>
+        </nav>
+        <div class="snb">
+            <a href="#">customer</a>
+            <img src="#" alt=""> <!-- '|' 헤더에 이런 구분선은 아무 의미없이 들어가지 않음. 메뉴, 태그 구분이 되어있으니 구조 잘 파악하기 -->
+            <span class="lang_search">
+                <a href="#"><img src="#" alt="국가언어선택"></a>
+                <a href="#"><img src="#" alt="검색하기"></a>
+            </span>
+        </div>
+    </header>
+    <hr>
+    <!-- 입생로랑 사이트 헤더 구조 연습하기 : 내 코드 (쌤 코드 보고 재수정) -->
+    <header>
+        <div class="top">
+            <a href="#">매장찾기</a>
+            <h1><a href="#"><img src="#" alt="입생로랑 로고"></a></h1>
+            <div>
+                <a href="#"><img src="#" alt="마이페이지"></a>
+                <a href="#"><img src="#" alt="장바구니"></a>
+            </div>
+        </div>
+        <div class="btm"> 
+            <nav> <!-- gnb 시작 -->
+                <a href="#">공식몰 혜택</a>
+                <a href="#">공식몰 단독 제품</a>
+                <a href="#">신제품</a>
+                <a href="#">베스트 셀러</a>
+                <a href="#">메이크업</a>
+                <a href="#">향수</a>
+                <a href="#">스킨케어</a>
+                <a href="#">YSL BEAUTY CLUB</a>
+            </nav> <!-- gnb 끝 -->
+            <a href="#">
+                <span>검색</span>
+                <img src="#" alt="검색"> 
+            </a>
+        </div>
+    </header>
+    <!-- 입생로랑 사이트 헤더 구조 연습하기 : 쌤 예시 -->
+    <header>
+        <div class="top">
+            <a href="#" class="store_search">매장찾기</a> <!-- 의미적으로 작성하는게 좋음 -->
+            <h1><a href="#"><img src="#" alt="입생로랑"></a></h1>
+            <div class="snb">
+                <a href="#"><img src="#" alt="마이페이지"></a>
+                <a href="#"><img src="#" alt="장바구니"></a>
+            </div>
+        </div>
+        <div class="btm"> 
+            <nav>
+                <a href="#" class="benefits">공식몰 혜택</a>
+                <a href="#">공식몰 단독 제품</a>
+                <a href="#">신제품</a>
+                <a href="#">베스트 셀러</a>
+                <a href="#">메이크업</a>
+                <a href="#">향수</a>
+                <a href="#">스킨케어</a>
+                <a href="#"><em>YSL BEAUTY CLUB</em></a>
+            </nav>
+            <a href="#" class="search_btn">
+                <span>검색</span>
+                <img src="#" alt="검색"> 
+            </a>
+        </div>
+    </header>
+</body>
+</html>
