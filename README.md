@@ -128,3 +128,18 @@
 * gnb (global navigation bar) : nav 묶이는 대상 (사이트 제일 큰, 주요 메뉴)
 * lnb (local navigation bar)
 * snb (side navigation bar)
+## ul, ol, li
+* 목록 태그라고 하며, 크게 순차, 비순차 목록 태그가 있다.
+* `ul`은 비순차 목록 태그 (li 이외에는 자식 태그 올 수 없다 / `ul`과 h,p 등등은 형제태그 가능)
+* `ol`은 순차 목록 태그 (li 이외에는 자식 태그 올 수 없다 / `ol`과 h,p 등등은 형제태그 가능)
+* `li`는 ul, ol과 항상 같이 써야 한다. (ul,ol: 부모 - li: 자식)
+* `li`는 h,p,a 등등의 태그를 자식으로 둘 수 있다. (형제는 불가능)
+* 따라서, `ul,ol태그` 과 `h,p,a 태그`는 `형제, 자손 관계`만 가능하다.
+## details, summary
+* `details` : 
+* `summary` : 인라인 태그에 가깝다. (span(인라인)과 형제로 쓸 수 있음)
+## footer, mark, main, time
+* `footer` : 사이트의 하단에서 회사의 주소와 고객센터 정보 등등을 담고 있는 영역을 잡는 시멘틱 태그
+* `mark` : 하이라이트 기능이 있는 인라인 태그
+* `main` : header와 footer 사이 내용을 담는 커다란 영역을 잡는 시멘틱 태그
+* `time` : 웹 사이트에서 시간을 기록해주는 태그
