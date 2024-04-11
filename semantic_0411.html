@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer 등 시멘틱 태그</title>
+</head>
+<body>
+    <header>교보문고 헤더</header>
+    <main>
+        교보문고 <mark>전체 내용</mark><br>
+        <time datatime="2024-04-11"></time>
+        <time datatime="04-11"></time>
+        <time datatime="11:55"></time>
+    </main>
+    <footer> <!-- footer에 h태그 안 넣는게 기본 구조임 -->
+        <a href="#" class="ft_logo"><img src="#" alt="교보문고 로고"></a>
+        <div class="ft_snb">
+            <a href="#">회사소개</a><img src="#" alt="">
+            <a href="#">이용약관</a><img src="#" alt="">
+            <a href="#"><em>개인정보처리방침</em></a><img src="#" alt="">
+            <a href="#">청소년보호정책</a><img src="#" alt="">
+            <a href="#">대량주문안내</a><img src="#" alt="">
+            <a href="#">협력사여러분</a><img src="#" alt="">
+            <a href="#">채용정보</a><img src="#" alt="">
+            <a href="#">광고소개</a> <!-- 구분선을 이미지태그로 넣은 것이므로, 마지막엔 빼기 -->
+        </div>
+        <address>
+            대표이사 : 안병현, 김상훈<img src="#" alt="">
+            서울특별시 종로구 종로 1<img src="#" alt="">
+            사업자등록번호 : 102-81-11670<br>
+            <em>대표전화 : 1544-1900(발신자 부담전화)</em>
+            <img src="#" alt="">FAX : 0502-987-5711(지역번호 공통)
+            <img src="#" alt="">서울특별시 통신판매업신고번호 : 제 653호
+            <a href="#">사업자정보확인</a>
+        </address>
+        <p class="ft_copy">&copy; kyobo book centre</p>
+    </footer>
+    <hr>
+    <!-- details 와 summary 태그 -->
+    <h1>시멘틱 태그 연습</h1>
+    <details>
+        <summary>요약</summary> <!- - summary태그는 인라인 태그에 가깝다. -->
+        <span>설명.....................</span>
+        <span>설명.....................</span>
+        <span>설명.....................</span>
+        <span>설명.....................</span>
+    </details>
+</body>
+</html>
